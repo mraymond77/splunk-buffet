@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+.title-buffet {
+  font-family: "pacifico";
+  padding-left: 5px; }
+
+.logo-buffet {
+  height: 34px;
+  padding-right: 12px;
+  padding-left: 15px; }
+
+.btn {
+  text-transform: none; }
+
+.btn-info {
+  color: #000 !important; }
+
+.btn-info:hover, .btn-info:focus {
+  color: #000 !important; }
+
+.btn-info:active {
+  color: #000 !important; }
+
+.btn-sidebar {
+  color: #000;
+  background-color: transparent;
+  border-top-color: #000;
+  border-bottom-color: #000; }
+
+.btn-sidebar:active {
+  color: #000;
+  background-color: #7ecec2;
+  border-top-color: #000;
+  border-bottom-color: #000; }
+
+.wrapper {
+  flex: 1;
+  height: 100vh;
+  overflow: auto;
+  transition: all 0.4s ease 0s; }
+
+.no-hover {
+  pointer-events: none; }
+
+.sidebar-wrapper {
+  padding-top: 10px;
+  float: left;
+  width: 250px;
+  text-align: center;
+  background: #085078;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3dc2b2, #085078);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #3dc2b2, #085078);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: all 0.4s ease 0s; }
+
+.close-thin {
+  font: 14px/100% arial, sans-serif;
+  color: #cc0000 !important;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
+  top: 5px; }
+
+.page-content-wrapper {
+  margin-left: 250px;
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  width: 82vw;
+  padding: 20px; }
+
+.input-group-text {
+  min-width: 115px;
+  background: #d3d9de;
+  border: 1px solid #b6bfc8; }
+
+.form-control-inputs {
+  font-family: 'IBM Plex Mono', monospace; }
+
+.inputs-indexname-span {
+  font-family: 'IBM Plex Mono', monospace; }
+
+.add-log-modal-dialog {
+  max-width: 800px; }
+
+.navbar {
+  max-height: 56px;
+  display: flex;
+  align-items: center;
+  padding: .5rem 1rem; }
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  list-style: none;
+  margin: 0;
+  padding: 20px; }
+
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px; }
+
+.form-control::-webkit-input-placeholder {
+  color: #DBDBDB; }
+
+.form-control::-moz-placeholder {
+  color: #DBDBDB; }
+
+.form-control:-ms-input-placeholder {
+  color: #DBDBDB; }
+
+.form-control:-moz-placeholder {
+  color: #DBDBDB; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 5px;
+  font-size: 11px; }
+
+.footer-copyright {
+  float: right;
+  margin-right: 1.5rem;
+  padding-right: 0;
+  line-height: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.footer-links {
+  float: left; }
+
+/* Spinner */
+.loader-wrapper {
+  overflow: hidden;
+  top: 10px;
+  z-index: 90;
+  width: 100%;
+  text-align: center;
+  display: none;
+  /* loader-box */ }
+  .loader-wrapper .loader-box {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    margin: 0 auto; }
+    .loader-wrapper .loader-box .loader,
+    .loader-wrapper .loader-box .loader:after {
+      border-radius: 50%;
+      width: 10em;
+      height: 10em; }
+    .loader-wrapper .loader-box .loader {
+      margin: 0;
+      font-size: 3.5px;
+      position: relative;
+      text-indent: -9999em;
+      border-top: 1.1em solid rgba(155, 155, 155, 0.2);
+      border-right: 1.1em solid rgba(155, 155, 155, 0.2);
+      border-bottom: 1.1em solid rgba(155, 155, 155, 0.2);
+      border-left: 1.1em solid #999;
+      -webkit-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-animation: load8 1.1s infinite linear;
+      animation: load8 1.1s infinite linear; }
+
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+/* loader-wrapper */
+@media (max-width: 767px) {
+  .wrapper {
+    padding-left: 0; }
+  .sidebar-wrapper {
+    left: 0; }
+  .wrapper.active {
+    position: relative;
+    left: 250px; }
+  .wrapper.active .sidebar-wrapper {
+    left: 250px;
+    width: 250px;
+    transition: all 0.4s ease 0s; } }

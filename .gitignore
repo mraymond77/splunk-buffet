@@ -1,0 +1,104 @@
+# node
+node_modules/
+
+# flask
+instance/
+
+# testing
+coverage/
+
+# misc
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+#gcc, java, vs, python, etc files
+############################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.[oa]
+*.h.gch #compiled legacy c header files.
+*.1
+*.3
+*.d
+*.html
+*.pyc
+
+#Distribution, Packaging
+############################
+build/
+dist/
+*.egg-info
+.installed.cfg
+*.egg
+
+# Installers, Unzips, Etc.
+############################
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.msi
+
+#Editor Temp Files
+###########################
+*~
+*.swp
+*\#*
+*.out
+*.swo
+*.vscode
+data/
+
+#System Files
+###########################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+#IDE Files
+#########################
+*.suo
+*.user
+.c9
+.editorconfig
+
+#IDE  Directories
+##########################
+obj/
+bin/
+.idea
+
+#Flat Files
+##########################
+*.csv
+
+# Pytest files
+#########################
+*.cache
+
+# Vagrant files
+#########################
+.vagrant
+
+# Environment files
+#########################
+.env
+

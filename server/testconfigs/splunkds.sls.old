@@ -1,0 +1,40 @@
+index_to_input_map:
+  acme_prod:
+    inputs:
+    - type: monitor
+      path: /var/log/acme_prod/app.log
+      index: acme_prod 
+      sourcetype: json:acme_prod
+    - type: monitor
+      path: /var/log/acme_prod/error.log
+      index: acme_prod
+      sourcetype: apache_error
+    deploymentclient_sites:
+    - or1
+
+  acme_stage:
+   inputs:
+   - index: acme_stage
+     path: /var/log/acme_stage/access.log
+     sourcetype: access_combined
+     type: monitor
+   - index: acme_stage
+     path: /var/log/acme_stage/error.log
+     sourcetype: apache_error
+     type: monitor
+   deploymentclient_sites:
+   - wa1
+   - sin2
+   - da2
+   - va5
+
+  acme_dev:
+   inputs:
+   - index: acme_stage
+     path: /var/log/acme_dev/error.json
+     sourcetype: json:acme
+     type: monitor
+   deploymentclient_sites:
+   - wa1
+   - sin2
+   - va5

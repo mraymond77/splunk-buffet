@@ -1,0 +1,40 @@
+{
+  "name": "cst-splunk-buffet",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:5000",
+  "dependencies": {
+    "availity-reactstrap-validation": "^2.0.2",
+    "bootstrap": "^4.1.0",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.4",
+    "react-sidebar": "^2.3.2",
+    "reactstrap": "^5.0.0",
+    "redux": "^4.0.0",
+    "redux-auth-wrapper": "^2.0.2",
+    "redux-devtools": "^3.4.1",
+    "redux-thunk": "^2.2.0",
+    "whatwg-fetch": "^2.0.4"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar ./src/assets/styles/scss -o ./src/assets/styles/css",
+    "watch-css": "npm run build-css && node-sass-chokidar ./src/assets/styles/scss -o ./src/assets/styles/css -w -r",
+    "start": "react-scripts start",
+    "build": "npm run build-css && react-scripts build",
+    "test": "react-scripts test --env=jsdom"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-react": "^7.7.0",
+    "node-sass": "^4.8.3",
+    "node-sass-chokidar": "^1.2.2",
+    "npm-run-all": "^4.1.2",
+    "redux-devtools-dock-monitor": "^1.1.3",
+    "redux-devtools-log-monitor": "^1.4.0",
+    "redux-logger": "^3.0.6"
+  }
+}

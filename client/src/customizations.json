@@ -1,0 +1,17 @@
+{
+    "loginMessage": "Log in with LDAP credentials",
+    "navbarBrand": "Acme",
+    "deploymentclientSites": [
+        "or1",
+        "wa1",
+        "da2",
+        "va5",
+        "lon5",
+        "ams1",
+        "cn1",
+        "sin2",
+        "hk2",
+        "tyo2",
+        "syd2"
+    ]
+}
